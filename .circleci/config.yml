@@ -13,3 +13,25 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
+      
+  deploy-heroku:
+    docker:
+      - image: circleci/openjdk:8-jdk-browsers
+    working_directory: ~/deploy
+    steps:
+      # why rebuild something we already tested, rebuilding invalidates any previous confidence?!
+      - attach_workspace:
+          at: /tmp
+
+      - run:
+          name: Run setup script
+          command: bash /tmp/setup-heroku.sh
+
+      - run:
+          name: Heroku Deploy
+          command: |
+            cp /tmp/standalone-app.jar .
+            ls -la
+            heroku plugins:install heroku-cli-deploy
+            heroku plugins:install heroku-cli-deploy  # when debugging on circle image, first run succeeded, but did not make plugin available
+            heroku deploy:jar standalone-app.jar --app $HEROKU_APP_NAME
