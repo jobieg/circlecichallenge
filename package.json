@@ -1,7 +1,7 @@
 {
   "name": "circlecichallenge",
   "version": "1.0.0",
-  "description": "all about testing test testing test test",
+  "description": "technical challenge from circleci",
   "main": "42.js",
   "scripts": {
     "test": "jest"
