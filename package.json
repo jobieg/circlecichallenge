@@ -1,0 +1,17 @@
+{
+  "name": "circlecichallenge",
+  "version": "1.0.0",
+  "description": "Interview Challenge",
+  "main": "42.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "challenge",
+  ],
+  "author": "Jobie Gilchrist",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
