@@ -2,7 +2,7 @@
   "name": "circlecichallenge",
   "version": "1.0.0",
   "description": "all about testing test testing test test",
-  "main": "42.html",
+  "main": "42.js",
   "scripts": {
     "test": "jest"
   },
@@ -11,7 +11,7 @@
     "test"
   ],
   "author": "Jobie Gilchrist",
-  "license": "ME",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^22.1.4"
   }
