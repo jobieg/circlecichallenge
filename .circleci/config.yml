@@ -13,5 +13,3 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
-      
-      deploy node or something
