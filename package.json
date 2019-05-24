@@ -4,7 +4,7 @@
   "description": "technical challenge from circleci",
   "main": "42.html",
   "scripts": {
-    "test": "jest  
+    "test": "jest"
   "engines": {
     "node": "10.x"
    
