@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "button challenge",
   "main": "42.html",
-  "engines": 
+  "engines": {
     "node": "8.10.0"
   },
   "scripts": {
