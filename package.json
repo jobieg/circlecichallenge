@@ -5,9 +5,9 @@
   "main": "42.html",
   "scripts": {
     "test": "jest"
+  },
   "engines": {
     "node": "10.x"
-   
   },
   "keywords": [
     "challenge",
